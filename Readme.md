@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Стас Новиков](https://up.htmlacademy.ru/htmlcss/25/user/681261).
-* Наставник: `Неизвестно`.
+* Студент: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
