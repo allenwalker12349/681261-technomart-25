@@ -48,7 +48,59 @@
       <h1 class="catalog-title">Перфараторы</h1>
       <div class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
-        <!-- фильтры - формы -->
+        <!-- бегунок -->
+        <form action="#">
+          <fieldset class="filter-brand">
+            <h2>Производители:</h2>
+            <p>
+              <label>
+                <input type="checkbox" name="bosch" value="bosch">
+                Bosch
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="Интерскол" value="interskol">
+                Интерскол
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="makita" value="makita">
+                Makita
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="dewalt" value="dewalt">
+                Dewalt
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="hitachi" value="hitachi">
+                hitachi
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="filter-energy">
+            <h2>Питание:</h2>
+            <p>
+              <label>
+                <input type="radio" name="power" value="accumulator">
+                аккумуляторное
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="power" value="cable">
+                сетевое
+              </label>
+            </p>
+          </fieldset>
+          <button type="button" name="show=result">Показать</button>
+        </form>
       </div>
       <ul class="catalog-container">
         <li class="catalog-item">
@@ -152,6 +204,13 @@
       </ul>
     </section>
   </main>
+
+  <section class="modal cart-pop-up">
+    <h2>Товар добавлен в корзину!</h2>
+    <a href="#">Оформить заказ</a>
+    <a href="#">Продолжить покупки</a>
+    <button type="button" name="close-cart-btn">Закрыть</button>
+  </section>
 
   <footer>
     <section class="footer-navigation">
