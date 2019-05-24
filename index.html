@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
@@ -14,37 +18,78 @@
       <a class="top-bar-btn basket basket-active" href="#" >Корзина</a>
       <a class="top-bar-btn make-order-btn" href="#">Оформить заказ</a>
     </div>
-    <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <div class="top-contacts-container">
-      <b class="telephone">+7(812)555-05-55</b>
-      <span class="address-topbar">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+    <div class="low-bar">
+      <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="top-contacts-container">
+        <b class="telephone">+7(812)555-05-55</b>
+        <span class="address-topbar">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </div>
+      <div class="account-container">
+        <a class="enter-btn" href="#">Войти</a>
+        <a class="registration-btn" href="registration.html">Регистрация</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="#">Компания</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#">Новости</a>
+        <a href="#">Спецпредложения</a>
+        <a href="#">Доставка</a>
+        <a href="#">Контакты</a>
+      </nav>
     </div>
-    <div class="account-container">
-      <a class="enter-btn" href="#">Войти</a>
-      <a class="registration-btn" href="registration.html">Регистрация</a>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html">Главная</a>
-      <a href="#">Компания</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="#">Новости</a>
-      <a href="#">Спецпредложения</a>
-      <a href="#">Доставка</a>
-      <a href="#">Контакты</a>
-    </nav>
   </header>
 
   <main>
+    <section class="slider-area">
+      <div class="slider-area-item slider-area-item--new">
+        <p>Материалы</p>
+        <a href="#">На любой вкус</a>
+      </div>
+      <div class="slider-area-item">
+        <p>Инструмент</p>
+        <a href="#">На все случаи</a>
+      </div>
+      <div class="slider-area-item">
+        <p>Техника</p>
+        <a href="#">Для стройки</a>
+      </div>
+      <div class="slider">
+        <div class="slider-title-container">
+          <h3>Дрели</h3>
+          <p>Соседям на радость</p>
+        </div>
+        <button type="button" name="slider-prev">Предыдущий слайд</button>
+        <button type="button" name="slider-next">Следующий слайд</button>
+        <a href="#">Открыть каталог</a>
+        <button class="slider-dots active-dot" type="button" name="slider-dot">Текущий слайд</button>
+        <button class="slider-dots" type="button" name="slider-dot">Текущий слайд</button>
+      </div>
+      <div class="slider-area-item">
+        <p>Скидки 50%</p>
+        <a href="#">На 350 товаров</a>
+      </div>
+      <div class="slider-area-item">
+        <p>Доставка</p>
+        <a href="#">Бесплатно</a>
+      </div>
+    </section>
+
+    <section class="popular">
+      <h2>Популярные товары</h2>
+      <a class="" href="#">Все популярные товары</a>
+    </section>
+
     <section class="about">
-      <h2 class="about-title">Компания "Техномарт"</h2>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
-      <ul class="about-shipping-company-list">
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="about-btn" href="#">Подробнее о компании</a>
+    <h2 class="about-title">Компания "Техномарт"</h2>
+    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+    <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+    <ul class="about-shipping-company-list">
+      <li>Деловые линии</li>
+      <li>Автотрейдинг</li>
+      <li>ЖелДорЭкспедиция</li>
+    </ul>
+    <a class="about-btn" href="#">Подробнее о компании</a>
     </section>
 
     <section class="contacts">
@@ -60,7 +105,7 @@
   <footer>
     <section class="footer-navigation">
       <h2 class="visually-hidden">Навигация внизу сайта</h2>
-      <img class="company-logo-footer" src="img/logo.svg" alt="Техномарт">
+      <img class="company-logo-footer" src="img/logo-technomart.svg" alt="Техномарт">
       <nav class="footer-navigation-bar">
         <a href="about.html">Компания</a>
         <a href="news.html">Новости</a>
@@ -69,7 +114,7 @@
         <a href="contacts.html">Контакты</a>
       </nav>
 
-      <b class="contacts-footer">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</b>
+      <address class="contacts-footer">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</address>
       <nav class="footer-special">
         <a href="#">Материалы</a>
         <a href="#">Техника</a>

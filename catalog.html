@@ -3,66 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
   <header>
     <div class="top-bar">
-      <a class="logo" href="index.html"><img src="img/logo.svg" alt="Техномарт"></a>
+      <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Техномарт"></a>
       <b class="search">Поиск</b>
       <a class="top-bar-btn favorites" href="#">Закладки</a>
       <a class="top-bar-btn basket basket-active" href="#" >Корзина</a>
       <a class="top-bar-btn make-order-btn" href="#">Оформить заказ</a>
     </div>
-    <h2 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
-    <div class="top-contacts-container">
-      <b class="telephone">+7(812)555-05-55</b>
-      <span class="address-topbar">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+
+    <div class="low-bar">
+      <h2 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+      <div class="top-contacts-container">
+        <b class="telephone">+7(812)555-05-55</b>
+        <span class="address-topbar">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </div>
+      <div class="account-container">
+        <a class="account" href="#">Равшан Джамшутович</a>
+        <a class="logout-btn" href="#">Выйти</a>
+        <a class="orders" href="#">Мои заказы</a>
+        <a class="account-link" href="#">Личный кабинет</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="#">Компания</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="#">Новости</a>
+        <a href="#">Спецпредложения</a>
+        <a href="#">Доставка</a>
+        <a href="#">Контакты</a>
+      </nav>
     </div>
-    <div class="account-container">
-      <a class="account" href="#">Равшан Джамшутович</a>
-      <a class="logout-btn" href="#">Выйти</a>
-      <a class="orders" href="#">Мои заказы</a>
-      <a class="account-link" href="#">Личный кабинет</a>
-    </div>
-    <nav class="main-nav">
-      <a href="index.html">Главная</a>
-      <a href="#">Компания</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="#">Новости</a>
-      <a href="#">Спецпредложения</a>
-      <a href="#">Доставка</a>
-      <a href="#">Контакты</a>
-    </nav>
   </header>
 
   <main>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs-home"><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="tools.html"></a>Инструменты</li>
-      <li class="breadcrumbs-current"><a href="perforators.html">Перфораторы</a></li>
-    </ul>
+    <div class="breadcrumbs">
+      <a class="breadcrumbs-home" href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a></li>
+      <a href="#">Инструменты</a>
+      <a class="breadcrumbs-current">Перфораторы</a>
+    </div>
 
     <section class="catalog">
       <h1 class="catalog-title">Перфараторы</h1>
       <div class="filters">
-        <h2 class="visually-hidden">Фильтры</h2>
+        <h2 class="filters-title">Фильтры</h2>
         <!-- бегунок -->
         <form action="#">
           <fieldset class="filter-brand">
-            <h2>Производители:</h2>
-            <p>
-              <label>
-                <input type="checkbox" name="bosch" value="bosch">
-                Bosch
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox" name="Интерскол" value="interskol">
-                Интерскол
-              </label>
+            <legend>Производители:</legend>
+              <input type="checkbox" name="bosch" value="bosch" id="bosch"> <label for="bosch">Bosch</label>
+              <input type="checkbox" name="Интерскол" value="interskol" id="interskol"><label for="interskol">Интерскол</label>
             </p>
             <p>
               <label>
@@ -85,7 +83,7 @@
           </fieldset>
 
           <fieldset class="filter-energy">
-            <h2>Питание:</h2>
+            <legend>Питание:</legend>
             <p>
               <label>
                 <input type="radio" name="power" value="accumulator">
@@ -99,7 +97,7 @@
               </label>
             </p>
           </fieldset>
-          <button type="button" name="show=result">Показать</button>
+          <button class="filter-show-btn" type="button" name="show=result">Показать</button>
         </form>
       </div>
       <ul class="catalog-container">
@@ -120,8 +118,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -131,8 +129,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -142,8 +140,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -153,8 +151,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -164,8 +162,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -175,8 +173,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -186,8 +184,8 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
 
@@ -197,20 +195,13 @@
           <del class="catalog-item-price crossed-price">22500 Р.</del>
           <a class="catalog-item-price-btn" href="#">15500 Р.</a>
           <div class="hovered">
-            <a class="buy-btn" href="#"></a>
-            <a class="add-favorites-btn" href="#"></a>
+            <a class="buy-btn" href="#">Купить</a>
+            <a class="add-favorites-btn" href="#">В закладки</a>
           </div>
         </li>
       </ul>
     </section>
   </main>
-
-  <section class="modal cart-pop-up">
-    <h2>Товар добавлен в корзину!</h2>
-    <a href="#">Оформить заказ</a>
-    <a href="#">Продолжить покупки</a>
-    <button type="button" name="close-cart-btn">Закрыть</button>
-  </section>
 
   <footer>
     <section class="footer-navigation">
@@ -251,6 +242,13 @@
       </p>
     </section>
   </footer>
+
+  <section class="modal cart-pop-up">
+    <h2>Товар добавлен в корзину!</h2>
+    <a href="#">Оформить заказ</a>
+    <a href="#">Продолжить покупки</a>
+    <button type="button" name="close-cart-btn">Закрыть</button>
+  </section>
 
   </body>
 </html>
