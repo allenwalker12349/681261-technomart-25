@@ -142,7 +142,7 @@ body {
 
 .about-btn {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -159,31 +159,29 @@ body {
 
 .about-shipping-company-list li {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.11;
   color: #000000;
 }
 
 .footer-navigation {
   background-color: #32425c;
+  line-height: 1.33;
 }
 
 .footer-navigation-bar a {
   text-decoration: none;
   color: #f1f5f7;
   font-size: 18px;
-  line-height: 24px;
 }
 
 .contacts-footer {
   color: #f3f7f9;
   font-size: 18px;
-  line-height: 24px;
 }
 
 .footer-special a {
   color: #ffd180;
   font-size: 18px;
-  line-height: 24px;
   text-decoration: none;
 }
 
@@ -219,7 +217,6 @@ body {
 
 .account {
   font-size: 21px;
-  line-height: 21px;
   text-decoration: none;
   color: #000;
 }
@@ -227,14 +224,14 @@ body {
 .orders,
 .account-link {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.13;
   color: #32425c;
 }
 
 .breadcrumbs a {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.38;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -242,7 +239,6 @@ body {
 
 .catalog-title {
   font-size: 30px;
-  line-height: 30px;
   color: #32425c;
 }
 
@@ -250,7 +246,7 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.38;
 }
 
 .filter-brand legend,
@@ -259,7 +255,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 1.76;
 }
 
 .filter-brand label,
