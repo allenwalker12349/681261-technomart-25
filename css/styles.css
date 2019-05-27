@@ -282,6 +282,20 @@ body {
   text-decoration: none;
 }
 
+.paginator a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.paginator-current {
+  background-color: #ee3643;
+}
+
 .hovered {
   display: none;
 }
