@@ -23,6 +23,37 @@ header {
   align-items: center;
 }
 
+/* Заголовки на главной странице */
+
+.index-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.index-title-container {
+  background-color: #f9f5f0;
+  margin-bottom: 20px;;
+}
+
+.index-btn-more {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ee3643;
+}
+
+.index-description {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+
 /* Полоса с лого и поиском */
 
 .top-bar {
@@ -138,7 +169,7 @@ header {
   color: white;
 }
 
-/* СЛайдер и промо */
+/* Слайдер и промо */
 
 .slider-area .container {
   display: flex;
@@ -198,7 +229,11 @@ header {
   color: white;
 }
 
-/* Популярные товары */
+/* Популярные товары и стили каталога */
+
+.popular-products {
+  margin-bottom: 20px;
+}
 
 .catalog-item-container {
   display: flex;
@@ -242,34 +277,23 @@ header {
   display: block;
 }
 
+/* Популярные производители */
 
-
-/* Заголовки на главной странице */
-
-.index-title {
-  font-size: 30px;
-  color: #32425c;
+.makers-item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
 }
 
-.index-title-container {
-  background-color: #f9f5f0;
-}
-
-.index-btn-more {
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #ee3643;
-}
-
-.index-description {
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.85;
-  color: #000000;
+.makers-item {
+  flex-basis: 220px;
+  min-height: 145px;
+  border: solid 1px #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .about-title {
