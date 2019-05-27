@@ -17,6 +17,10 @@ header {
   margin: -1px;
 }
 
+.modal {
+  display: none;
+}
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -424,6 +428,14 @@ header {
   color: #000000;
 }
 
+/* Подвал */
+
+.footer-navigation .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 68px;
+}
+
 .footer-navigation {
   background-color: #32425c;
   line-height: 1.33;
@@ -433,6 +445,11 @@ header {
   text-decoration: none;
   color: #f1f5f7;
   font-size: 18px;
+  padding-right: 60px;
+}
+
+.footer-navigation-bar a:last-child {
+  padding-right: 0;
 }
 
 .contacts-footer {
@@ -444,17 +461,29 @@ header {
   color: #ffd180;
   font-size: 18px;
   text-decoration: none;
+  padding-right: 60px;
 }
 
-.modal {
-  display: none;
+.footer-special a:last-child {
+  padding-right: 0;
 }
+
+/* самый нижний футер */
 
 .footer-contacts {
   color: white;
   font-size: 16px;
   line-height: 1.13;
   background-color: #293449;
+}
+
+.footer-contacts b {
+  font-weight: normal;
+}
+
+.footer-contacts .container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .feedback-footer {
@@ -475,6 +504,8 @@ header {
   color: #ffd180;
   text-decoration: none;
 }
+
+/* стили каталога */
 
 .account {
   font-size: 21px;
