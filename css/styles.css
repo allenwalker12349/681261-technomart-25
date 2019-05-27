@@ -307,12 +307,12 @@ header {
 .services .about-title {
   padding-top: 68px;
   margin-bottom: 38px;
-  text-transform: uppercase;
 }
 
 .about-title {
   font-size: 30px;
   font-weight: normal;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -358,6 +358,34 @@ header {
   margin-bottom: 34px;
 }
 
+/* Раздел Контактов и о компании */
+
+.about-contacts {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.about-contacts .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-contacts .index-description {
+  margin-top: 36px;
+}
+
+.about-shipping-company-list {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-shipping-company-list li {
+  margin-top: 24px;
+  padding-left: 35px;
+}
+
 .about-btn {
   font-size: 14px;
   line-height: 1.29;
@@ -373,6 +401,21 @@ header {
   line-height: 1.29;
   text-align: center;
   color: #32425c;
+}
+
+.contacts {
+  flex-basis: 300px;
+  align-self: stretch;
+}
+
+.contacts .about-title {
+  margin-bottom: 39px;
+}
+
+.contacts-map {
+  display: block;
+  margin-top: 36px;
+  margin-bottom: 40px;
 }
 
 .about-shipping-company-list li {
