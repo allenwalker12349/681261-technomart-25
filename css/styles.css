@@ -1,15 +1,7 @@
-body
-{
+body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1;
-
   color: #000;
-}
-
-header {
-  background-color: #f4f7f9;
-  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -18,239 +10,126 @@ header {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
-.container
-{
-  width: 940px;
-  margin: 0 auto;
+.top-bar {
+  background-color: #293449;
+  line-height: 1.06;
 }
 
-.top-bar
-{
-    background-color: #293449;
-    width: 100%;
+.low-bar {
+  background-color: #f4f7f9;
 }
 
-.top-bar .container
-{
-  display: flex;
-  width: 940px;
-  padding: 0 10px;
-  position: relative;
+.top-bar a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #fff;
 }
 
-.logo
-{
-  width: 220px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
-  text-align: center;
-  position: absolute;
+.header-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.44;
+  color: #ee3643;
 }
 
-.search
-{
-  width: 90px;
+.telephone {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.address-topbar {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.enter-btn {
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+}
+
+.registration-btn {
+  font-size: 21px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.main-nav a {
+  font-size: 17px;
+  text-decoration: none;
   color: white;
-  align-self: center;
 }
 
-.favorites
-{
-  margin-left: auto;
-}
-
-.top-bar-btn
-{
-  width: 150px;
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.make-order-btn
-{
-  background-color: #63a63e;
-}
-
-.make-order-btn:hover
-{
-  background-color: #5fbb2d;
-}
-
-.low-bar
-{
-  display: flex;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  justify-content: space-around;
-}
-
-.top-bar a
-{
-    font-size: 17px;
-    line-height: 18px;
-
-    text-decoration: none;
-
-    color: #fff;
-}
-
-.header-title
-{
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 23px;
-
-    color: #ee3643;
-    width: 300px;
-    margin: 0;
-}
-
-.top-contacts-container
-{
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.telephone
-{
-    font-size: 21px;
-    line-height: 21px;
-
-    color: #ee3643;
-}
-
-.address-topbar
-{
-    font-size: 14px;
-    line-height: 24px;
-
-    color: #32425c;
-}
-
-.account-container
-{
-  display: flex;
-}
-
-.enter-btn
-{
-    font-size: 21px;
-    line-height: 21px;
-
-    text-decoration: none;
-
-    color: black;
-    width: 140px;
-    text-align: center;
-    align-self: center;
-}
-
-.registration-btn
-{
-    font-size: 21px;
-    line-height: 21px;
-
-    text-decoration: none;
-
-    color: black;
-    width: 140px;
-    text-align: center;
-    align-self: center;
-}
-
-.main-nav
-{
-    background-color: #32425c;
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-nav a
-{
-    font-size: 17px;
-    line-height: 17px;
-    padding: 22px 0;
-
-    text-decoration: none;
-
-    color: white;
-    width: 140px;
-    text-align: center;
-}
-
-.main-nav a:hover
-{
-  background-color: #1d2739;
-}
-
-.slider-area
-{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: pink;
-}
-
-.slider-area-item
-{
-  width: 300px;
-}
-
-.slider-area-item p
-{
+.slider-area-item p {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   color: white;
   font-weight: bold;
 }
 
-.slider-area-item a
-{
+.slider-area-item a {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: white;
   text-decoration: none;
 }
 
-.slider h3
-{
- font-size: 36px;
- font-weight: bold;
- line-height: 1;
- color: #ffffff;
+.slider h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-.slider p
-{
+.slider p {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   color: white;
 }
 
-.about-title
-{
+/* Заголовки на главной странице */
+
+.index-title {
   font-size: 30px;
-  line-height: 1;
-  color: #000000;
+  color: #32425c;
 }
 
-.about p
-{
-  font-family: 'PT Sans', sans-serif;
+.index-btn-more {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.index-description {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.85;
   color: #000000;
 }
 
-.about-btn
-{
+.about-title {
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-slide h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #32425c;
+}
+
+.about-btn {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -258,88 +137,64 @@ header {
   text-decoration: none;
 }
 
-.about-shipping-company-list li
-{
+.about-shipping-company-list li {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
-.contacts-title
-{
-  font-size: 30px;
-  line-height: 30px;
-  color: black;
-}
-
-.contacts-description {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.footer-navigation-bar a
-{
+.footer-navigation-bar a {
   text-decoration: none;
   color: #f1f5f7;
   font-size: 18px;
   line-height: 24px;
 }
 
-.contacts-footer
-{
+.contacts-footer {
   color: #f3f7f9;
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-special a
-{
+.footer-special a {
   color: #ffd180;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
 }
 
-.modal
-{
+.modal {
   display: none;
 }
 
-.footer-contacts
-{
+.footer-contacts {
   color: white;
   font-size: 16px;
   line-height: 18px;
 }
 
-.feedback-footer
-{
+.feedback-footer {
   font-size: 16px;
   line-height: 18px;
   color: white;
 }
 
-.feedback-footer span
-{
+.feedback-footer span {
   color: #ffd180;
 }
 
-.developed-footer
-{
+.developed-footer {
   font-size: 16px;
   line-height: 18px;
   color: white;
 }
 
-.developed-footer a
-{
+.developed-footer a {
   color: #ffd180;
   text-decoration: none;
 }
 
-.account
-{
+.account {
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
@@ -347,16 +202,14 @@ header {
 }
 
 .orders,
-.account-link
-{
+.account-link {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
 }
 
-.breadcrumbs a
-{
-  font-family: 'PT Sans', sans-serif;
+.breadcrumbs a {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -364,25 +217,22 @@ header {
   text-decoration: none;
 }
 
-.catalog-title
-{
+.catalog-title {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
 }
 
-.filters-title
-{
-  font-family: 'PT Sans', sans-serif;
+.filters-title {
+  font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
 }
 
 .filter-brand legend,
-.filter-energy legend
-{
-  font-family: 'PT Sans', sans-serif;
+.filter-energy legend {
+  font-family: 'PT Sans', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -393,18 +243,18 @@ header {
 .filter-energy label {
   font-size: 15px;
   line-height: 1.3;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .filter-show-btn {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
 }
 
 .catalog-container {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .catalog-item-title {
@@ -430,6 +280,20 @@ header {
   text-align: center;
   color: white;
   text-decoration: none;
+}
+
+.paginator a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.paginator-current {
+  background-color: #ee3643;
 }
 
 .hovered {
