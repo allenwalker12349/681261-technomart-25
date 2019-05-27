@@ -52,6 +52,7 @@ header {
   font-size: 13px;
   line-height: 1.85;
   color: #000000;
+  margin: 0;
 }
 
 /* Полоса с лого и поиском */
@@ -296,16 +297,65 @@ header {
   margin-bottom: 20px;
 }
 
+/* Сервисы */
+
+.services {
+  background-color: #f4f7f9;
+  padding-bottom: 100px;
+}
+
+.services .about-title {
+  padding-top: 68px;
+  margin-bottom: 38px;
+  text-transform: uppercase;
+}
+
 .about-title {
   font-size: 30px;
-  color: #000000;
-  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+.services-selector {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 74px;
+  display: inline-block;
+}
+
+.services-selector li {
+  padding-left: 20px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #ffffff;
+  background-color: #32425c;
+  width: 240px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+}
+
+.services-selector .services-selector-current {
+  background-color: white;
+  color: #32425c;
+  border-top: none;
+}
+
+.services-slide {
+  display: inline-block;
+  padding-left: 80px;
 }
 
 .services-slide h3 {
   text-transform: uppercase;
   font-size: 36px;
   color: #32425c;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .about-btn {
