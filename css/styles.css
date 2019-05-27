@@ -2,7 +2,6 @@ body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
   color: #000;
-
 }
 
 header {
@@ -141,18 +140,36 @@ header {
 
 /* СЛайдер и промо */
 
-.slider-area {
-  /* Временный фон */
-  background-color: grey;
-}
-
 .slider-area .container {
   display: flex;
+  min-height: 409px;
+}
+
+.left-column-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.right-column-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slider {
+  background-color: #32231e;
+  width: 620px;
+  min-height: 266px;
+  flex-grow: 1;
 }
 
 .slider-area-item {
   background-color: #ffbf47;
   width: 300px;
+  min-height: 123px;
+  margin-bottom: 20px;
 }
 
 .slider-area-item p {
@@ -169,11 +186,6 @@ header {
   text-decoration: none;
 }
 
-.slider {
-  background-color: #32231e;
-  width: 620px;
-}
-
 .slider h3 {
   font-size: 36px;
   font-weight: bold;
@@ -185,6 +197,51 @@ header {
   line-height: 1.33;
   color: white;
 }
+
+/* Популярные товары */
+
+.catalog-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  flex-basis: 218px;
+  border: solid 1px #eaeaea;
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  text-align: center;
+  color: #999999;
+}
+
+.catalog-item del {
+  display: block;
+}
+
+.catalog-item-price-btn {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #ee3643;
+  display: block;
+}
+
 
 
 /* Заголовки на главной странице */
@@ -361,32 +418,6 @@ header {
 
 .catalog-container {
   font-family: 'PT Sans', Arial, sans-serif;
-}
-
-.catalog-item-title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.11;
-  text-align: center;
-  color: #000000;
-}
-
-.catalog-item-price {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.06;
-  text-align: center;
-  color: #999999;
-}
-
-.catalog-item-price-btn {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.06;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  background-color: #ee3643;
 }
 
 .paginator a {
