@@ -2,6 +2,12 @@ body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
   color: #000;
+
+}
+
+header {
+  background-color: #f4f7f9;
+  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -12,13 +18,44 @@ body {
   margin: -1px;
 }
 
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Полоса с лого и поиском */
+
 .top-bar {
   background-color: #293449;
   line-height: 1.06;
+  min-height: 42px;
+  margin-bottom: 46px;
 }
 
-.low-bar {
-  background-color: #f4f7f9;
+.top-bar .container {
+  display: flex;
+}
+
+.logo {
+  width: 220px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  align-self: center;
+}
+
+.search {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+  margin-right: auto;
+  width: 80px;
 }
 
 .top-bar a {
@@ -27,23 +64,51 @@ body {
   color: #fff;
 }
 
+.top-bar-btn {
+  width: 150px;
+  text-align: center;
+}
+
+/* Полоса с контактами и ЛК */
+
+.low-bar {
+  margin-bottom: 44px;
+}
+
+.low-bar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .header-title {
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
   line-height: 1.44;
   color: #ee3643;
+  min-width: 310px;
+  margin: 0;
+}
+
+.top-contacts-container {
+  min-width: 310px;
+  text-align: center;
 }
 
 .telephone {
   font-size: 21px;
   color: #ee3643;
+  display: block;
 }
 
 .address-topbar {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.account-container {
+  min-width: 310px;
 }
 
 .enter-btn {
@@ -58,9 +123,14 @@ body {
   color: black;
 }
 
-.main-nav {
+/* Главная навигация */
+
+.main-nav .container {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-nav a {
@@ -69,9 +139,20 @@ body {
   color: white;
 }
 
+/* СЛайдер и промо */
+
 .slider-area {
   /* Временный фон */
   background-color: grey;
+}
+
+.slider-area .container {
+  display: flex;
+}
+
+.slider-area-item {
+  background-color: #ffbf47;
+  width: 300px;
 }
 
 .slider-area-item p {
@@ -88,6 +169,11 @@ body {
   text-decoration: none;
 }
 
+.slider {
+  background-color: #32231e;
+  width: 620px;
+}
+
 .slider h3 {
   font-size: 36px;
   font-weight: bold;
@@ -99,6 +185,7 @@ body {
   line-height: 1.33;
   color: white;
 }
+
 
 /* Заголовки на главной странице */
 
