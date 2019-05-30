@@ -186,7 +186,7 @@ header {
 
 /* Слайдер и промо */
 
-.slider-area .container {
+.slider-area {
   display: flex;
   min-height: 409px;
 }
@@ -377,9 +377,6 @@ header {
 .about-contacts {
   padding-top: 80px;
   padding-bottom: 85px;
-}
-
-.about-contacts .container {
   display: flex;
   justify-content: space-between;
 }
