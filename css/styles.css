@@ -5,7 +5,7 @@ body {
 }
 
 img {
-  width: 100%
+  width: 100%;
   height: auto;
 }
 
@@ -70,32 +70,102 @@ header {
   background-color: #293449;
   line-height: 1.06;
   min-height: 42px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
-.top-bar {
+.top-bar .container {
   display: flex;
+  position: relative;
 }
 
 .logo {
   width: 220px;
   height: 42px;
-  text-align: center;
   display: flex;
   justify-content: center;
+  background-color: #ee3643;
+  border-bottom: 4px solid #b52933;
+  margin-bottom: -4px;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+.logo:active {
+  background-color: #ba2732;
 }
 
 .logo img {
   align-self: center;
+  width: 50%;
+}
+
+.search-field {
+  flex-grow: 1;
 }
 
 .search {
+  box-sizing: border-box;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 48px;
+  background-color: transparent;
+  border: none;
+}
+
+.search-field::before {
+  content: url('../img/icon-search.svg');
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  padding-left: 18px;
+  opacity: 0.3;
+}
+
+input[type="search"]::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 17px;
   line-height: 1.06;
   color: #ffffff;
-  flex-grow: 1;
+}
 
+input[type="search"]:-moz-placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+input[type="search"]:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.favorites {
+  width: 155px;
+}
+
+.favorites::before {
+  content: url('../img/icon-bookmark.svg');
+  width: 14px;
+  height: 16px;
+  position: absolute;
+  right: 420px;
+  opacity: 0.3;
+}
+
+.basket {
+  width: 100px;
+}
+
+.basket::before {
+  content: url('../img/icon-cart.svg');
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  position: absolute;
+  right: 267px;
 }
 
 .top-bar a {
@@ -104,17 +174,20 @@ header {
   color: #fff;
 }
 
-.top-bar-btn {
-  width: 150px;
-  text-align: center;
+.make-order-btn {
+  width: 110px;
+  background-color: #63a63e;
+  padding: 12px 20px;
 }
 
 /* Полоса с контактами и ЛК */
 
 .low-bar {
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
 }
 
 .header-title {
@@ -123,32 +196,46 @@ header {
   font-style: italic;
   line-height: 1.44;
   color: #ee3643;
-  min-width: 310px;
+  display: inline-block;
+  padding-top: 4px;
   margin: 0;
+  margin-left: 52px;
 }
 
 .top-contacts-container {
-  min-width: 310px;
   text-align: center;
+  padding-left: 4px;
 }
 
 .telephone {
   font-size: 21px;
   color: #ee3643;
   display: block;
+  border: solid 3px #ffffff;
+  padding: 8px 48px 8px 68px;
+}
+
+.telephone::before {
+  content: url('../img/icon-phone.svg');
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 335px;
 }
 
 .address-topbar {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  display: inline-block;
+  padding-top: 2px;
 }
 
 /* блок авторизации и ЛК */
 
 .account-container {
-  min-width: 310px;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .account {
@@ -165,12 +252,25 @@ header {
   font-size: 21px;
   text-decoration: none;
   color: black;
+  padding: 12px 27px 12px 48px;
+  background-color: white;
+  margin-right: 7px;
+}
+
+.enter-btn::before {
+  content: url('../img/icon-login.svg');
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  right: 247px;
 }
 
 .registration-btn {
   font-size: 21px;
   text-decoration: none;
   color: black;
+  padding: 12px 25px;
+  background-color: white;
 }
 
 /* Главная навигация */
@@ -178,15 +278,15 @@ header {
 .main-nav {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
-  min-height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .main-nav a {
   font-size: 17px;
   text-decoration: none;
   color: white;
+  padding: 20px 30px;
 }
 
 /* Слайдер и промо */
