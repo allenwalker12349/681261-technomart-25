@@ -9,9 +9,10 @@ img {
   height: auto;
 }
 
-header {
+.site-header {
   background-color: #f4f7f9;
   padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .visually-hidden {
@@ -39,6 +40,7 @@ header {
   font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .index-title-container {
@@ -108,7 +110,7 @@ header {
   box-sizing: border-box;
   width: 100%;
   color: #ffffff;
-  padding-left: 48px;
+  padding: 13px 0 13px 48px;
   background-color: transparent;
   border: none;
 }
@@ -118,8 +120,17 @@ header {
   width: 17px;
   height: 17px;
   position: absolute;
-  padding-left: 18px;
+  padding-left: 17px;
+  padding-top: 11px;
   opacity: 0.3;
+}
+
+.search-field:hover {
+  background-color: #212a3a;
+}
+
+.search-field:hover::before {
+  opacity: 1;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -143,7 +154,13 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .favorites {
-  width: 155px;
+  padding: 10px 33px;
+  margin-right: 10px;
+}
+
+.favorites:active {
+  opacity: 0.6;
+  background-color: #161d29;
 }
 
 .favorites::before {
@@ -155,8 +172,17 @@ input[type="search"]:-ms-input-placeholder {
   opacity: 0.3;
 }
 
+.favorites:hover::before {
+  opacity: 1;
+}
+
 .basket {
-  width: 100px;
+  padding: 10px 30px 10px 35px;
+}
+
+.basket:active {
+  opacity: 0.6;
+  background-color: #161d29;
 }
 
 .basket::before {
@@ -166,6 +192,10 @@ input[type="search"]:-ms-input-placeholder {
   opacity: 0.3;
   position: absolute;
   right: 267px;
+}
+
+.basket:hover::before {
+  opacity: 1;
 }
 
 .top-bar a {
@@ -178,6 +208,14 @@ input[type="search"]:-ms-input-placeholder {
   width: 110px;
   background-color: #63a63e;
   padding: 12px 20px;
+}
+
+.make-order-btn:hover {
+  background-color: #5fbb2d;
+}
+
+.make-order-btn:active {
+  opacity: 0.5;
 }
 
 /* Полоса с контактами и ЛК */
@@ -248,13 +286,28 @@ input[type="search"]:-ms-input-placeholder {
   width: 10%;
 }
 
-.enter-btn {
+.account-btn {
   font-size: 21px;
   text-decoration: none;
   color: black;
-  padding: 12px 27px 12px 48px;
   background-color: white;
+}
+
+.account-btn:hover {
+  color: #ee3643;
+}
+
+.account-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.enter-btn {
+  padding: 12px 27px 12px 48px;
   margin-right: 7px;
+}
+
+.registration-btn {
+  padding: 12px 25px;
 }
 
 .enter-btn::before {
@@ -263,14 +316,6 @@ input[type="search"]:-ms-input-placeholder {
   height: 17px;
   position: absolute;
   right: 247px;
-}
-
-.registration-btn {
-  font-size: 21px;
-  text-decoration: none;
-  color: black;
-  padding: 12px 25px;
-  background-color: white;
 }
 
 /* Главная навигация */
@@ -289,6 +334,14 @@ input[type="search"]:-ms-input-placeholder {
   padding: 20px 30px;
 }
 
+.main-nav a:hover {
+  background-color: #1d2739;
+}
+
+.main-nav a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* Слайдер и промо */
 
 .slider-area {
@@ -302,6 +355,7 @@ input[type="search"]:-ms-input-placeholder {
   flex-wrap: wrap;
   flex-basis: 620px;
   justify-content: space-between;
+  position: relative;
 }
 
 .right-slider-column {
@@ -319,8 +373,8 @@ input[type="search"]:-ms-input-placeholder {
 
 .slider-item h3 {
   margin: 0;
-  margin-top: 25px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 22px;
   margin-bottom: 15px;
   color: white;
   font-size: 24px;
@@ -328,26 +382,47 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .slider-item a {
-  margin-left: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 135px;
+  padding: 10px 5px;
+  margin-left: 25px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  text-align: center;
   font-size: 14px;
   line-height: 1.29;
-  padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+
+.slider-item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-materials {
   background-color: #ffbf47;
 }
 
+.slider-materials::before {
+  content: url('../img/new.png');
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .slider-materials::after {
   content: url('../img/icon-1.svg');
   position: absolute;
-  right: 31px;
-  top: 30px;
+  right: 43px;
+  top: 32px;
   width: 44px;
   height: 65px;
 }
@@ -359,8 +434,8 @@ input[type="search"]:-ms-input-placeholder {
 .slider-tools::after {
   content: url('../img/icon-2.svg');
   position: absolute;
-  right: 31px;
-  top: 30px;
+  right: 29px;
+  top: 34px;
   width: 75px;
   height: 61px;
 }
@@ -385,8 +460,8 @@ input[type="search"]:-ms-input-placeholder {
 .slider-sale::after {
   content: url('../img/icon-4.svg');
   position: absolute;
-  right: 31px;
-  top: 20px;
+  right: 45px;
+  top: 25px;
   width: 59px;
   height: 72px;
 }
@@ -398,8 +473,8 @@ input[type="search"]:-ms-input-placeholder {
 .slider-shipping::after {
   content: url('../img/icon-5.svg');
   position: absolute;
-  right: 31px;
-  top: 35px;
+  right: 30px;
+  top: 30px;
   width: 78px;
   height: 63px;
 }
@@ -415,7 +490,7 @@ input[type="search"]:-ms-input-placeholder {
   text-transform: uppercase;
   color: white;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 20px;
   margin-left: 24px;
 }
 
@@ -424,7 +499,6 @@ input[type="search"]:-ms-input-placeholder {
   line-height: 1.33;
   color: white;
   margin: 0;
-  margin-top: 8px;
   margin-left: 24px;
   position: relative;
 }
@@ -445,25 +519,30 @@ input[type="search"]:-ms-input-placeholder {
 .slider-next {
   background: url('../img/icon-right.svg');
   top: 114px;
-  right: 25px;
+  right: 20px;
 }
 
 .slider-item--big .slider-link {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
+  min-width: 195px;
   background-color: #ee3643;
-  padding: 10px 35px;
+  margin: 0;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 21px;
+  left: 27px;
+}
+
+.slider-item--big .slider-link:hover {
+  background-color: #ca2c37;
+}
+
+.slider-item--big .slider-link:active {
+  background-color: #ba2732;
 }
 
 .dots-container {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
+  bottom: 33px;
+  left: 294px;
 }
 
 .slider-dot {
