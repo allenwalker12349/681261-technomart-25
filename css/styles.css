@@ -15,6 +15,10 @@ img {
   margin-bottom: 60px;
 }
 
+.catalog-page .site-header {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -169,7 +173,11 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .basket {
-  padding: 10px 30px 10px 35px;
+  padding: 12px 30px 12px 35px;
+}
+
+.basket-active {
+  background-color: #ee3643;
 }
 
 .basket:active {
@@ -265,17 +273,54 @@ input[type="search"]:-ms-input-placeholder {
 
 .account-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.account-container span {
+  padding: 5px;
+  position: relative;
+}
+
+.orders {
+  padding-left: 14px;
+}
+
+.orders::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
+  position: absolute;
+  top: 12px;
+  left: 107px;
+}
+
+.account-link {
+  padding-left: 30px;
 }
 
 .account {
   display: inline-block;
-  width: 88%;
+  box-sizing: border-box;
+  padding: 12px 5px;
+  min-width: 300px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .logout-btn {
   display: inline-block;
-  width: 10%;
+  width: 20px;
+  height: 17px;
+  background-color: grey;
+  font-size: 0px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
 }
 
 .account-btn {
