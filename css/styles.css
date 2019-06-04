@@ -34,7 +34,6 @@ img {
 .container {
   max-width: 940px;
   margin: 0 auto;
-  align-items: center;
 }
 
 /* Заголовки на главной странице */
@@ -84,13 +83,6 @@ img {
   background-color: #ee3643;
   border-bottom: 4px solid #b52933;
   margin-bottom: -4px;
-}
-
-.logo:hover {
-  background-color: #ca2c37;
-}
-.logo:active {
-  background-color: #ba2732;
 }
 
 .logo img {
@@ -150,8 +142,10 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .favorites {
-  padding: 10px 33px;
-  margin-right: 10px;
+  width: 150px;
+  box-sizing: border-box;
+  padding: 11px 0 12px 45px;
+
 }
 
 .favorites:active {
@@ -173,11 +167,22 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .basket {
-  padding: 12px 30px 12px 35px;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 11px 0 12px 50px;
 }
 
 .basket-active {
   background-color: #ee3643;
+}
+
+.logo:hover,
+.basket-active:hover {
+  background-color: #ca2c37;
+}
+.logo:active,
+.catalog-page .basket-active:active {
+  background-color: #ba2732;
 }
 
 .basket:active {
@@ -225,32 +230,35 @@ input[type="search"]:-ms-input-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
 }
 
 .header-title {
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
   line-height: 1.44;
   color: #ee3643;
-  display: inline-block;
-  padding-top: 4px;
+  min-width: 250px;
   margin: 0;
-  margin-left: 52px;
+  padding-top: 4px;
+  padding-left: 51px;
 }
 
 .top-contacts-container {
-  text-align: center;
-  padding-left: 4px;
+  width: 270px;
+  box-sizing: border-box;
 }
 
 .telephone {
   font-size: 21px;
+  font-weight: normal;
   color: #ee3643;
-  display: block;
   border: solid 3px #ffffff;
-  padding: 8px 48px 8px 68px;
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 5px 8px 71px;
+  position: relative;
 }
 
 .telephone::before {
@@ -258,69 +266,29 @@ input[type="search"]:-ms-input-placeholder {
   width: 19px;
   height: 19px;
   position: absolute;
-  left: 335px;
+  top: 10px;
+  left: 12px;
 }
 
 .address-topbar {
   font-size: 14px;
-  line-height: 24px;
+  font-weight: normal;
+  line-height: 1.71;
+  text-align: center;
   color: #32425c;
-  display: inline-block;
-  padding-top: 2px;
+  display: block;
+  margin-top: 4px;
 }
 
 /* блок авторизации и ЛК */
 
 .account-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-}
-
-.account-container span {
-  padding: 5px;
-  position: relative;
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 .orders {
-  padding-left: 14px;
-}
-
-.orders::after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #32425c;
-  position: absolute;
-  top: 12px;
-  left: 107px;
-}
-
-.account-link {
-  padding-left: 30px;
-}
-
-.account {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 12px 5px;
-  min-width: 300px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.logout-btn {
-  display: inline-block;
-  width: 20px;
-  height: 17px;
-  background-color: grey;
-  font-size: 0px;
-  position: absolute;
-  top: 1px;
-  right: 1px;
+  margin-right: 30px;
 }
 
 .account-btn {
@@ -328,6 +296,8 @@ input[type="search"]:-ms-input-placeholder {
   text-decoration: none;
   color: black;
   background-color: white;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .account-btn:hover {
@@ -339,20 +309,29 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .enter-btn {
-  padding: 12px 27px 12px 48px;
-  margin-right: 7px;
+  position: relative;
+  width: 121px;
+  padding: 12px 5px 12px 48px;
+}
+
+.enter-btn svg {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  margin-right: 10px;
+}
+
+.enter-btn:hover path {
+  fill: #32425c;
+}
+
+.enter-btn:active path {
+  fill: #c5c5c5;
 }
 
 .registration-btn {
-  padding: 12px 25px;
-}
-
-.enter-btn::before {
-  content: url('../img/icon-login.svg');
-  width: 20px;
-  height: 17px;
-  position: absolute;
-  right: 247px;
+  width: 150px;
+  padding: 12px 5px 12px 30px;
 }
 
 /* Главная навигация */
@@ -361,14 +340,15 @@ input[type="search"]:-ms-input-placeholder {
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-nav a {
   font-size: 17px;
   text-decoration: none;
   color: white;
-  padding: 20px 30px;
+  padding: 20px 31px;
 }
 
 .main-nav a:hover {
@@ -587,7 +567,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 
-/* Популярные товары и стили каталога */
+/* Популярные товары */
 
 .popular-products {
   margin-bottom: 20px;
@@ -1126,10 +1106,18 @@ input[type="search"]:-ms-input-placeholder {
 
 /* стили каталога */
 
-.account {
-  font-size: 21px;
-  text-decoration: none;
-  color: #000;
+.catalog-page .account-container {
+  width: 300px;
+}
+
+.name-container {
+  position: relative;
+}
+
+.account-navigation {
+  display: block;
+  margin-top: 5px;
+  margin-left: 18px;
 }
 
 .orders,
@@ -1137,6 +1125,50 @@ input[type="search"]:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.13;
   color: #32425c;
+  position: relative;
+}
+
+.orders:hover,
+.account-link:hover {
+  color: #ee3643;
+}
+
+.orders::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
+  position: absolute;
+  top: 7px;
+  left: 90px;
+}
+
+.account {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 21px;
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 5px 12px 47px;
+}
+
+.logout-btn {
+  font-size: 0;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.name-container:hover path {
+  fill: #32425c;
+}
+
+.icon-user {
+  position: absolute;
+  top: 14px;
+  left: 14px;
 }
 
 /* Хлебные крошки */
