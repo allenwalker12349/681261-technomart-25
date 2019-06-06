@@ -259,36 +259,28 @@
   </footer>
 
   <section class="modal map-popup">
+    <span class="red-top-line"></span>
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/map.jpg" alt="адрес Большая конюшенная 19/9 офис 19" width="950" height="450">
-    <button type="button" name="close-map-pop-up">Закрыть</button>
+    <img src="img/map-big.jpg" alt="адрес Большая конюшенная 19/9 офис 19" width="950" height="446">
+    <button class="close-cart-btn" type="button" name="close-map-modal">Закрыть</button>
   </section>
 
-  <section class=" modal write-us-popup">
-    <form action="#">
-      <fieldset>
-      <legend>Форма обратной связи</legend>
-        <p>
-          <label>
-            Ваше имя:
-            <input type="text" name="write-name" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p>
-          <label>
-            Ваш e-mail:
-            <input type="text" name="write-email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p>
-          <label>
-            Текст письма:
-            <textarea name="write-your-text" rows="8" cols="80" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <button type="submit" name="send-write-us-form">Отправить</button>
-      </fieldset>
-      <button class="close-write-us-btn" type="button" name="close-write-us">Закрыть</button>
+  <section class="modal write-us-popup">
+    <span class="red-top-line"></span>
+    <form class="write-us-form" action="#">
+      <p class="write-us-item">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="write-name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="write-us-item">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="write-name" placeholder="email@example.com" id="email">
+      </p>
+      <p class="write-us-item">
+        <label for="write-back-field">Текст письма:</label>
+        <textarea name="write-your-text" rows="8" cols="80" placeholder="В свободной форме" id="write-back-field"></textarea>
+      </p>
+      <button class="main-btn button" type="submit">Отправить</button>
     </form>
   </section>
 
