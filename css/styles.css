@@ -48,12 +48,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.red-top-line {
-  display: block;
-  height: 7px;
-  background-color: #ee3643;
-}
-
 .cart-pop-up {
   width: 620px;
 }
@@ -131,6 +125,9 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 80px;
+  padding-right: 80px;
+  padding-left: 80px;
+  border-top: 7px solid #ee3643;
 }
 
 .write-us-item {
@@ -184,6 +181,16 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
+.modal-btn-container {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  width: 620px;
+  padding: 40px 80px;
+  margin-top: 30px;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
 
 /* Заголовки на главной странице */
 
@@ -211,6 +218,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map-popup {
+  border-top: 7px solid #ee3643;
   width: 940px;
   margin: 0 auto;
 }
@@ -252,7 +260,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   color: #ffffff;
-  padding: 13px 0 13px 48px;
+  padding: 15px 0 0 48px;
   background-color: transparent;
   border: none;
 }
@@ -465,13 +473,14 @@ input[type="search"]:-ms-input-placeholder {
 .enter-btn {
   position: relative;
   width: 121px;
-  padding: 12px 5px 12px 48px;
+  padding: 12px 5px 12px 50px;
+  margin-right: 10px;
 }
 
 .enter-btn svg {
   position: absolute;
   top: 15px;
-  left: 12px;
+  left: 17px;
   margin-right: 10px;
 }
 
@@ -484,8 +493,9 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .registration-btn {
+  text-align: center;
   width: 150px;
-  padding: 12px 5px 12px 30px;
+  padding: 10px;
 }
 
 /* Главная навигация */
@@ -697,7 +707,7 @@ input[type="search"]:-ms-input-placeholder {
 .slider-item--big .slider-link {
   min-width: 195px;
   bottom: 21px;
-  left: 27px;
+  left: 1px;
   background-color: #ee3643;
 }
 
