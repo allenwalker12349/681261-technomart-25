@@ -175,16 +175,34 @@
 
     <section class="services">
       <div class="container">
-        <h2 class="about-title">Сервисы</h2>
+        <h2 class="index-title-black-theme">Сервисы</h2>
         <p class="index-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-selector">
-          <li class="services-selector-current">Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
-        <div class="services-slide services-slide-current">
-          <h3>Доставка</h3>
-          <p class="index-description">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+        <div class="services-switch">
+          <input class="visually-hidden services-input services-input-delivery" type="radio" name="services-selector" value="" id="switch-delivery" checked>
+          <label class="switch-title services-input" for="switch-delivery">Доставка</label>
+          <input class="visually-hidden services-input services-input-guarantee" type="radio" name="services-selector" value="" id="switch-guarantee">
+          <label class="switch-title" for="switch-guarantee">Гарантия</label>
+          <input class="visually-hidden services-input services-input-credit" type="radio" name="services-selector" value="" id="switch-credit">
+          <label class="switch-title" for="switch-credit">Кредит</label>
+          <div class="services-slide services-slide-delivery">
+            <h3>Доставка</h3>
+            <p class="index-description">Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
+          </div>
+          <div class="services-slide services-slide-guarantee">
+            <h3>Гарантия</h3>
+            <p class="index-description">Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгаранием,<br>
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+            сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.</p>
+          </div>
+          <div class="services-slide services-slide-credit">
+            <h3>Кредит</h3>
+            <p class="index-description">Залезть в долговую яму стало проще!<br>
+            Кредитные консультанты придут вам на помощь.</p>
+          </div>
         </div>
       </div>
     </section>

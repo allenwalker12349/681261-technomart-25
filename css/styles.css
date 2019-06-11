@@ -206,7 +206,16 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   text-transform: uppercase;
   margin: 0;
-  padding: 28px 28px;;
+  padding: 28px 28px;
+}
+
+.index-title-black-theme {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .index-btn-more {
@@ -738,7 +747,7 @@ input[type="search"]:-ms-input-placeholder {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 65px;
+  margin-bottom: 61px;
 }
 
 .makers-item {
@@ -772,63 +781,53 @@ input[type="search"]:-ms-input-placeholder {
   position: relative;
 }
 
-.services::after {
-  content: url('../img/delivery.png');
-  position: absolute;
-  right: 163px;
-  top: 261px;
-}
-
 .services h2 {
-  padding-top: 64px;
+  padding-top: 65px;
 }
 
 .services p {
-  padding-top: 28px;
+  padding-top: 26px;
 }
 
-.services-selector {
-  margin: 0;
-  margin-top: 65px;
-  padding: 0;
-  list-style: none;
+.services-switch {
+  margin-top: 68px;
   position: relative;
 }
 
-.services-selector::before {
+.switch-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #fff;
+
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  min-height: 62px;
+  padding: 15px 0;
+  padding-left: 22px;
+
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+}
+
+.switch-title:hover {
+  background-color: #293449;
+}
+
+.services-input:checked + label {
+  background-color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #32425c;
+}
+
+.services-switch::before {
   content: url('../img/shadow.png');
   position: absolute;
   top: -40px;
   left: 230px;
-}
-
-.services-selector li {
-  width: 240px;
-  box-sizing: border-box;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.43;
-  background-color: #405069;
-  color: #fff;
-  padding: 16px 23px;
-  border-bottom: 1px solid #293449;
-  border-top: 1px solid #405069;
-}
-
-.services-selector li:hover {
-  background-color: #293449;
-}
-
-.services .services-selector-current {
-  background-color: #fff;
-  color: #32425c;
-  border-top: none;
-}
-
-.services-slide {
-  position: absolute;
-  top: 231px;
-  right: 346px;
 }
 
 .services-slide h3 {
@@ -838,6 +837,65 @@ input[type="search"]:-ms-input-placeholder {
   text-transform: uppercase;
   margin: 0;
 }
+
+.services-slide p {
+  padding-top: 25px;
+}
+
+.services-slide-delivery {
+  position: absolute;
+  right: 345px;
+  top: -4px;
+  display: none;
+}
+
+.services-slide-guarantee {
+  position: absolute;
+  right: 245px;
+  top: -4px;
+  display: none;
+}
+
+.services-slide-credit {
+  position: absolute;
+  right: 340px;
+  top: -4px;
+  display: none;
+}
+
+.services-input-delivery:checked ~ .services-slide-delivery {
+  display: block;
+}
+
+.services-input-guarantee:checked ~ .services-slide-guarantee {
+  display: block;
+}
+
+.services-input-credit:checked ~ .services-slide-credit {
+  display: block;
+}
+
+.services-slide-delivery::after {
+  position: absolute;
+  right: -344px;
+  top: 28px;
+  content: url('../img/delivery.png');
+}
+
+.services-slide-guarantee::after {
+  position: absolute;
+  left: 228px;
+  top: 7px;
+  content: url('../img/guarantee.png');
+}
+
+.services-slide-credit::after {
+  position: absolute;
+  left: 154px;
+  top: 4px;
+  content: url('../img/credit.png');
+}
+
 /* Раздел Контактов и о компании */
 
 .about-contacts {
@@ -1145,7 +1203,7 @@ input[type="search"]:-ms-input-placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
-  line-height: 1.06;
+  line-height: 18px;
   text-align: center;
 
   border: 1px solid #ccc;
@@ -1202,14 +1260,14 @@ input[type="search"]:-ms-input-placeholder {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.11;
 }
 
 .catalog-item .discount {
   min-height: 18px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
 
   color: #999;
