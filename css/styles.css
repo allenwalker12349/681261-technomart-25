@@ -50,6 +50,12 @@ input[type="radio"].visually-hidden {
 
 .cart-pop-up {
   width: 620px;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  margin-left: -310px;
+  z-index: 3;
+  display: none;
 }
 
 .cart-pop-up .button-section {
@@ -1414,6 +1420,9 @@ input[type="search"]:-ms-input-placeholder {
 
 .name-container {
   position: relative;
+  width: 100%;;
+  display: flex;
+  justify-content: space-between;
 }
 
 .account-navigation {
@@ -1454,23 +1463,29 @@ input[type="search"]:-ms-input-placeholder {
   color: #000000;
   text-decoration: none;
   padding: 12px 5px 12px 47px;
-}
-
-.logout-btn {
-  font-size: 0;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-}
-
-.name-container:hover path {
-  fill: #32425c;
+  flex-grow: 1;
 }
 
 .icon-user {
   position: absolute;
   top: 14px;
   left: 14px;
+}
+
+.name-container:hover .icon-user path {
+  fill: #32425c;
+}
+
+
+.logout-btn {
+  font-size: 0;
+  padding: 12px 10px;
+  padding-top: 15px;
+  background-color: #fff;
+}
+
+.logout-btn:hover path {
+  fill: #32425c;
 }
 
 /* Хлебные крошки */
@@ -1546,7 +1561,7 @@ input[type="search"]:-ms-input-placeholder {
   font-weight: normal;
   background-color: #f7f3ec;
   margin: 0;
-  padding: 14px 0 15px 18px;
+  padding: 10px 0 10px 18px;
 }
 
 .filters fieldset {
@@ -1590,6 +1605,19 @@ input[type="search"]:-ms-input-placeholder {
   position: absolute;
   left: -32px;
   top: 0;
+  opacity: 0.6;
+}
+
+.filter-input-checkbox + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: '';
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1607,12 +1635,29 @@ input[type="search"]:-ms-input-placeholder {
   color: #000000;
 }
 
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
 .filter-input-radio + label::before {
   content: url('../img/radio-off.svg');
 
   position: absolute;
   top: -3px;
   left: -32px;
+  opacity: 0.6;
+}
+
+.filter-input-radio + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1635,13 +1680,18 @@ input[type="search"]:-ms-input-placeholder {
   cursor: pointer;
 }
 
+.filter-show-btn:hover {
+  border: 1px solid #ee3643;
+}
+
 
 /* Каталог товаров */
 
 .main-catalog-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 71px;
+  margin-top: 20px;
 }
 
 .catalog-container {
@@ -1655,10 +1705,74 @@ input[type="search"]:-ms-input-placeholder {
   list-style: none;
 }
 
+.sort {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.38;
+
+  min-height: 38px;
+
+  background-color: #f7f3ec;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sort a {
+  text-decoration: none;
+  margin: 10px 0;
+  margin-left: 67px;
+  border-bottom: 1px dotted #ee3643;
+  color: rgba(0, 0, 0, 0.18);
+}
+
+.sort a:hover {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort .active-sort {
+  border-bottom: none;
+  color: #ee3643;
+}
+
+.sort h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  padding: 10px 0;
+  padding-left: 20px;
+  margin-right: 74px;
+}
+
+.sort::before {
+  content: '';
+  position: absolute;
+  border: 7px solid #f7f3ec;
+  border-bottom-color: #ee3643;
+  right: 47px;
+  top: 8px;
+}
+
+.sort::after {
+  content: '';
+  position: absolute;
+  border: 7px solid #f7f3ec;
+  border-top-color: #c5c5c5;
+  right: 15px;
+  top: 14px;
+}
+
 /* Пагинация */
 
 .paginator {
-  margin-top: 50px;
+  margin-top: 42px;
   display: block;
 }
 
@@ -1670,9 +1784,14 @@ input[type="search"]:-ms-input-placeholder {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 10px 14px;
   border: solid 1px #e5e5e5;
-  margin-right: 10px;
+  margin-right: 9px;
+  border-radius: 4px;
+}
+
+.paginator a:hover {
+  border: solid 1px #ee3643;
 }
 
 .paginator .paginator-current{
@@ -1680,9 +1799,17 @@ input[type="search"]:-ms-input-placeholder {
   color: #ffffff;
 }
 
+.paginator .next {
+  padding: 10px 28px;
+}
+
 .few-words {
-  padding: 67px 0 73px 0;
+  padding: 67px 0 68px 0;
   background-color: #f4f7f9;
+}
+
+.few-words h2 {
+  margin-bottom: 24px;
 }
 
 .about-title {
