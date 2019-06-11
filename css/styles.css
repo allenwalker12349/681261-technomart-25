@@ -759,10 +759,6 @@ input[type="search"]:-ms-input-placeholder {
   opacity: 0.3;
 }
 
-.makers-item img {
-  width: 60%;
-}
-
 /* Сервисы */
 
 .services {
@@ -1225,10 +1221,9 @@ input[type="search"]:-ms-input-placeholder {
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 11px 30px;
 
   color: white;
-  line-height: 1;
   background: #ee3643;
   border-radius: 3px;
 }
