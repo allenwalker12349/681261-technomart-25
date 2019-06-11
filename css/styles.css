@@ -118,6 +118,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background: #fff;
   margin-top: 20px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -310px;
+  display: none;
 }
 
 .write-us-form {
@@ -230,6 +235,11 @@ input[type="radio"].visually-hidden {
   border-top: 7px solid #ee3643;
   width: 940px;
   margin: 0 auto;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -470px;
+  display: none;
 }
 
 /* Полоса с лого и поиском */
@@ -722,6 +732,14 @@ input[type="search"]:-ms-input-placeholder {
   background-color: #ee3643;
 }
 
+.slider-item--big .slider-link:hover {
+  background-color: #ca2c37;
+}
+
+.slider-item--big .slider-link:active {
+  background-color: #ba2732;
+}
+
 .dots-container {
   position: absolute;
   bottom: 33px;
@@ -729,17 +747,40 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .slider-dot {
-  width: 14px;
-  height: 13px;
-  border: none;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  font-size: 13px;
+  margin-right: 8px;
 }
 
-.dot-active {
-  background-color: #ee3643;
+.slider-dot::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
 }
+
+.slider-dot::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ee3643;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  display: none;
+}
+
+.dot:checked + .slider-dot::after {
+  display: inline-block;
+}
+
+
 
 /* Популярные производители */
 
@@ -810,6 +851,7 @@ input[type="search"]:-ms-input-placeholder {
   background-color: #32425c;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
+  cursor: pointer;
 }
 
 .switch-title:hover {
@@ -902,7 +944,7 @@ input[type="search"]:-ms-input-placeholder {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 75px;
+  padding-top: 78px;
   padding-bottom: 122px;
 }
 
@@ -1009,7 +1051,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .footer-navigation-bar {
-  margin-top: 33px;
+  margin-top: 38px;
 }
 
 .footer-navigation-bar a {
@@ -1041,6 +1083,10 @@ input[type="search"]:-ms-input-placeholder {
   font-style: normal;
   color: #f3f7f9;
   font-size: 18px;
+}
+
+.footer-special {
+  margin-top: 11px;
 }
 
 .footer-special a {
@@ -1082,6 +1128,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .footer-contacts b {
+  padding-top: 16px;
   font-weight: normal;
   margin-right: 46px;
 }
