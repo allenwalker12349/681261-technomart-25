@@ -69,7 +69,23 @@
           <h2 class="filters-title">Фильтр:</h2>
           <!-- бегунок -->
           <form action="#">
-            <fieldset>
+            <fieldset class="filter-price">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price"> <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters-makers">
             <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
@@ -94,7 +110,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-power">
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-option">
