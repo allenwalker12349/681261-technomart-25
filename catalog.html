@@ -114,7 +114,7 @@
               <legend>Питание:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio"  type="radio" name="power" value="accumulator" id="filter-accumulator">
+                  <input class="visually-hidden filter-input filter-input-radio"  type="radio" name="power" value="accumulator" id="filter-accumulator" checked>
                   <label for="filter-accumulator">Аккумуляторное</label>
                 </li>
                 <li class="filter-option">
@@ -129,9 +129,21 @@
         <div class="catalog-container">
           <div class="sort">
             <h2>Сортировка:</h2>
-            <a class="active-sort" href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По функционалу</a>
+            <div class="sorting-container">
+              <a class="active-sort" href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По функционалу</a>
+            </div>
+            <div class="sort-arrow">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg>
+                По возрастанию
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg>
+                По увеличению
+              </a>
+            </div>
           </div>
           <div class="catalog-item">
             <div class="actions">
