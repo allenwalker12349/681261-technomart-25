@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
 
@@ -16,6 +16,7 @@
         <a class="logo" href="index.html"><img src="img/logo-technomart.svg" alt="Техномарт" width="138" height="23"></a>
         <form class="search-field">
           <input class="search" name="search" placeholder="Поиск:" type="search">
+          <button class="search-btn" type="button" name="search-btn">Поиск</button>
         </form>
         <a class="favorites" href="#">Закладки: 0</a>
         <a class="basket" href="#" >Корзина: 0</a>
@@ -61,6 +62,8 @@
           <a href="#">На все случаи</a>
         </div>
         <div class="slider-item slider-item--big">
+          <img src="img/slider-image.jpg" alt="Дрели" width="620" height="266">
+          <img src="img/slide-image-2.jpg" alt="Перфораторы" width="620" height="266">
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
           <button class="btn-slider slider-prev" type="button" name="prev"></button>
@@ -227,7 +230,7 @@
         <h2 class="about-title contacts-title">Контакты</h2>
         <p class="index-description">Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#" class="contacts-map">
-          <img src="img/map.jpg" alt="как добраться" width="300" height="158">
+          <img class="map-img" src="img/map.jpg" alt="как добраться" width="300" height="158">
         </a>
         <a class="main-btn about-btn write-us-btn" href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -283,7 +286,7 @@
 
   <section class="modal map-popup">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/map-big.jpg" alt="адрес Большая конюшенная 19/9 офис 19" width="950" height="446">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCFiY8nH" width="950" height="446" frameborder="1" allowfullscreen="true"></iframe>
     <button class="close-cart-btn" type="button" name="close-map-modal">Закрыть</button>
   </section>
 
@@ -292,11 +295,11 @@
     <form class="write-us-form" action="#">
       <p class="write-us-item">
         <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="write-name" value="" placeholder="Имя Фамилия">
+        <input id="name" type="text" name="write_name" value="" placeholder="Имя Фамилия">
       </p>
       <p class="write-us-item">
         <label for="email">Ваш e-mail:</label>
-        <input type="email" name="write-name" placeholder="email@example.com" id="email">
+        <input type="email" name="write-email" placeholder="email@example.com" id="email">
       </p>
       <p class="write-us-item">
         <label for="write-back-field">Текст письма:</label>
@@ -309,5 +312,8 @@
     </form>
   </section>
 
+  <script  src="js/script.min.js">
+
+  </script>
   </body>
 </html>
