@@ -246,7 +246,7 @@ input[type="radio"].visually-hidden {
 
 .index-title-container {
   background-color: #f9f5f0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   position: relative;
 }
 
@@ -333,7 +333,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 62%;
+  width: 50%;
 }
 
 .search-field {
@@ -1259,6 +1259,10 @@ input[type="radio"].visually-hidden {
   min-height: 63px;
 }
 
+.logo-footer img {
+  width: 62%;
+}
+
 .catalog-footer-logo img {
   width: 100%;
   padding-top: 20px;
@@ -1378,7 +1382,7 @@ input[type="radio"].visually-hidden {
 .social {
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 11px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1387,8 +1391,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-item {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-color: #232d3f;
   border-radius: 50%;
 }
@@ -1408,14 +1412,14 @@ input[type="radio"].visually-hidden {
 .social-vk::after {
   content: url('../img/icon-vk.svg');
   position: absolute;
-  top: 14px;
-  right: 9px;
+  top: 13px;
+  right: 7px;
 }
 
 .social-fb::after {
   content: url('../img/icon-fb.svg');
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 15px;
 }
 
@@ -1423,7 +1427,7 @@ input[type="radio"].visually-hidden {
   content: url('../img/icon-insta.svg');
   position: absolute;
   top: 9px;
-  right: 10px;
+  right: 9px;
 }
 
 .feedback-footer {
@@ -1582,7 +1586,6 @@ input[type="radio"].visually-hidden {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.11;
   color: #000;
@@ -2293,7 +2296,7 @@ input[type="radio"].visually-hidden {
 }
 
 .few-words {
-  padding: 68px 0 68px 0;
+  padding: 65px 0 68px 0;
   background-color: #f4f7f9;
 }
 
