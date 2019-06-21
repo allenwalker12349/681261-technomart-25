@@ -457,6 +457,18 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
 }
 
+.favorites-active {
+  background-color: #ee3643;
+}
+
+.favorites-active:hover {
+  background-color: #ca2c37;
+}
+
+.favorites-active:active {
+  background-color: #ba2732;
+}
+
 .favorites::before {
   content: url('../img/icon-bookmark.svg');
   width: 14px;
@@ -1736,14 +1748,22 @@ input[type="radio"].visually-hidden {
           flex-grow: 1;
 }
 
+.account:active {
+  color: #c5c5c5;
+}
+
 .icon-user {
   position: absolute;
   top: 14px;
   left: 14px;
 }
 
-.name-container:hover .icon-user path {
+.account:hover path {
   fill: #32425c;
+}
+
+.account:active path {
+  fill: #c5c5c5;
 }
 
 
@@ -1756,6 +1776,10 @@ input[type="radio"].visually-hidden {
 
 .logout-btn:hover path {
   fill: #32425c;
+}
+
+.logout-btn:active path {
+  fill: #c5c5c5;
 }
 
 /* Хлебные крошки */

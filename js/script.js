@@ -77,14 +77,7 @@ var buyLink = document.querySelectorAll(".buy"), index, button;
 var cart = document.querySelector(".cart-pop-up");
 var closeCart = cart.querySelector(".close-cart-btn");
 var continueBtn = cart.querySelector(".continue-btn");
-
-  for (index = 0; index < buyLink.length; index++) {
-      button = buyLink[index];
-      button.addEventListener('click', function (event) {
-          event.preventDefault();
-          cart.classList.add("modal-show");
-      });
-  }
+var basketBtn = document.querySelector(".basket");
 
   closeCart.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -104,3 +97,26 @@ var continueBtn = cart.querySelector(".continue-btn");
         }
       }
   });
+
+  for (index = 0; index < buyLink.length; index++) {
+      button = buyLink[index];
+      button.addEventListener('click', function (event) {
+          event.preventDefault();
+          cart.classList.add("modal-show");
+          basketBtn.classList.add("basket-active");
+      });
+  }
+
+/* Изменение цвета закладок */
+
+var bookmarkLink = document.querySelectorAll(".bookmark");
+var favorites = document.querySelector(".favorites")
+var bookTemp = "";
+
+for (i=0; bookmarkLink.length > i; i++) {
+  bookTemp = bookmarkLink[i];
+  bookTemp.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    favorites.classList.add("favorites-active");
+  });
+}
